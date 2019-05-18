@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="JS/app.js"></script>
+    <link rel="stylesheet" href="bootstrap.css"></link>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css" type="text/css" media="screen" /> 
+    <script src="http://lokeshdhakar.com/projects/lightbox2/js/jquery-1.7.2.min.js"></script> 
+    <script src="http://lokeshdhakar.com/projects/lightbox2/js/lightbox.js"></script> 
+    <style>
+    body{
+        padding: 30px 0px 30px 0px;
+        background: lightgoldenrodyellow;
+    }
+    h1, th{
+        font-family:oblique;
+        color:palevioletred;
+        font-family:courier;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: purple;
+    }
+    th{
+        font-size: 25px;
+    }
+    img{
+        margin: 15px;
+        box-shadow: 4px 4px 4px lightslategrey;
+    }
+    .bttn{
+        padding: 6px;
+        margin: 10px; 
+        background-color: lightcoral;
+        color: black;
+    }
+    .gallery{
+        margin: 10px 20px;
+        display: inline;
+    }
+    .gallery img{
+        width: 200px;
+        height: 200px;
+        padding: 5px
+    }
+    .gallery img:hover{
+        filter: grayscale(1);
+        transform: scale(1.1);
+    }
+    .t1{
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <table>
+    <thead id="userTable">
+    <tr>
+    <th>ID</th>
+    <th class="t1">TITLE</th>
+    <th>ACTION</th>
+    </tr>
+    </thead>
+    <button id="loadUsersButton" class="bttn">Load Users</button>
+    <tbody id="userTableBody">    
+    </tbody>
+    </table>
+    <h1>IMAGE GALLERY</h1>
+    <div id="imageBody"><div id="tabs"></div></div> 
+</body>
+</html>
